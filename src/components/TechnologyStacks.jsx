@@ -9,52 +9,52 @@ const styles = {
 function TechnologyStacks() {
   return (
     <>
-      <div className=" ml-[16.5px] mt-[22px] flex items-center">
+      <div className=" ml-[14px] mt-[22px] flex items-center">
         <Tool {...styles} className="mr-[9.66px] "></Tool>
-        <h2>Technologies stack</h2>
+        <h2 className="text-lg">Technologies stack</h2>
       </div>
       <div className=" ml-[17px] mt-[14px] flex items-center">
-        <h2 className="mr-[9.83px]">Current stack</h2>
+        <h2 className="mr-[9.83px] text-lg">Current stack</h2>
         <img src="Helps.svg" />
       </div>
       <p className="ml-[17px] mt-[10px]">Languages</p>
       <div></div>
-      <div className="grid grid-cols-2 mt-2">
-        <div className="w-[140px] h-9 flex items-center border rounded-xl">
+      <div className="flex flex-wrap  mt-2 ml-[17px]">
+        <div className="w-[140px] mb-[6px] mr-2 h-9 flex items-center border rounded-xl">
           <img src="JS.svg" className="mr-[6px] ml-[10px] w-[22px]" />
           <p>Java Script </p>
         </div>
-        <div className="w-[140px] h-9 flex items-center border rounded-xl">
+        <div className="w-[140px] mb-[6px] mr-2 h-9 flex items-center border rounded-xl">
           <img src="JS.svg" className="mr-[6px] ml-[10px]" />
           <p>Java Script </p>
         </div>
-        <div className="w-[140px] h-9 flex items-center border rounded-xl">
+        <div className="w-[140px] mr-2 h-9 flex items-center border rounded-xl">
           <img src="JS.svg" className="mr-[6px] ml-[10px]" />
           <p>Java Script </p>
         </div>
-        <div className="w-[140px] h-9 flex items-center border rounded-xl">
+        <div className="w-[140px] mr-2 h-9 flex items-center border rounded-xl">
           <img src="JS.svg" className="mr-[6px] ml-[10px]" />
           <p>Java Script </p>
         </div>
       </div>
       <div>
         <p className="ml-[17px] mt-[10px]">Technologies</p>
-        <div className="grid grid-cols-2 mt-2">
-          <div className="w-[140px] h-9 flex items-center border rounded-xl">
+        <div className="flex flex-wrap mt-2 ml-[17px]">
+          <div className="w-[140px] mr-2 mb-[6px] h-9 flex items-center border rounded-xl">
             <img src="React.svg" className="mr-[6px] ml-[10px]" />
             <p>React </p>
           </div>
-          <div className="w-[140px] h-9 flex items-center border rounded-xl">
+          <div className="w-[140px] mr-2 mb-[6px] h-9 flex items-center border rounded-xl">
             <img src="React.svg" className="mr-[6px] ml-[10px]" />
             <p>React </p>
           </div>
-          <div className="w-[140px] h-9 flex items-center border rounded-xl">
+          <div className="w-[140px] mr-2 h-9 flex items-center border rounded-xl">
             <img src="React.svg" className="mr-[6px] ml-[10px]" />
             <p>React </p>
           </div>
         </div>
         <div className="flex ml-[17px] mt-5">
-          <h2 className="mr-[9.83px]">Has experience in</h2>
+          <h2 className="mr-[9.83px] text-lg">Has experience in</h2>
           <img src="Helps.svg" />
         </div>
         <div className="flex mt-[10px]">

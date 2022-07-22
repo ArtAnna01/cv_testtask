@@ -12,11 +12,11 @@ function Heder() {
       <div className="flex flex-row pt-5 mb-4">
         <img src="Rectangle.png" className="mr-[10px] ml-[14px]" />
         <div className="mt-[5px]">
-          <h2 className="mb-0.5">Ivan Ivanov</h2>
+          <h1 className="mb-0.5">Ivan Ivanov</h1>
           <p>Senior Frontend Developer</p>
         </div>
       </div>
-      <div className="grid  grid-cols-2 place-content-stretch ml-[14px] mr-[18px]">
+      <div className="grid grid-cols-[20px_minmax(100px,260px)] gap-2 ml-[14px] ">
         <Briefcase {...styles} />
         <p>6 years - total work experience</p>
         <Clock {...styles} />
@@ -36,11 +36,11 @@ function Heder() {
         </p>
       </div>
       <div className="flex gap-[18px] ml-[22px]">
-        <button className="h-10 w-[111px] border rounded-lg border-originalBlue text-originalBlue flex justify-center items-center gap-[6px]">
+        <button className="h-10 w-[111px] text-base border rounded-lg border-originalBlue text-originalBlue flex justify-center items-center gap-[6px]">
           <Share {...styles} />
-          Share
+          <p className="text-base">Share</p>
         </button>
-        <button className="h-10 w-[142px] border rounded-lg bg-originalBlue  border-originalBlue text-white">
+        <button className="h-10 w-[142px]  text-base border rounded-lg bg-originalBlue  border-originalBlue text-white">
           Book a call
         </button>
       </div>
