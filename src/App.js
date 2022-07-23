@@ -1,17 +1,17 @@
-import Education from "./components/Education";
-import Heder from "./components/Heder";
-import TechnologyStacks from "./components/TechnologyStacks";
-import VettedSkills from "./components/VettedSkills";
-import WorkExperience from "./components/WorkExperience";
+import Education from "./containers/Education";
+import Heder from "./containers/Heder";
+import TechnologyStacks from "./containers/TechnologyStacks";
+import VettedSkills from "./containers/VettedSkills";
+import WorkExperience from "./containers/WorkExperience";
 
 function App() {
   return (
     <div className="bg-white">
-      <Heder></Heder>
-      <TechnologyStacks></TechnologyStacks>
+      <Heder />
+      {/* <TechnologyStacks></TechnologyStacks>
       <VettedSkills></VettedSkills>
       <WorkExperience></WorkExperience>
-      <Education></Education>
+      <Education></Education> */}
     </div>
   );
 }
