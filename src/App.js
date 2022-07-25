@@ -6,12 +6,12 @@ import WorkExperience from "./containers/WorkExperience";
 
 function App() {
   return (
-    <div className="bg-white">
+    <div className="bg-white pl-[14px] md:px-6 lg:px-8">
       <Heder />
-      {/* <TechnologyStacks></TechnologyStacks>
+      <TechnologyStacks />
       <VettedSkills></VettedSkills>
-      <WorkExperience></WorkExperience>
-      <Education></Education> */}
+      <WorkExperience />
+      <Education />
     </div>
   );
 }

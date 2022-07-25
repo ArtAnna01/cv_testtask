@@ -1,143 +1,76 @@
 import React from "react";
 import { ChevronUp } from "react-feather";
-import { Rating } from "react-simple-star-rating";
-
-const styles = {
-  size: "20px",
-  strokeWidth: "1px",
-};
+import MainRaiting from "../components/MainRaiting";
+import QuizData from "../components/QuizData";
+import { styles } from "..";
+import QuizResult from "../components/QuizResult";
+import useBP from "../hooks/useBP";
+import ButtonCode from "../components/ButtonCode";
+import CodeData from "../components/CodeData";
 
 function VettedSkills() {
+  const { isTablet, isDesktop, isMobile } = useBP();
+
   return (
     <>
-      <div className="mt-[22px] ml-[14px] mb-[14px] flex items-center">
-        <img src="Icons.svg" className="mr-[8px]" />
-        <h2 className="text-lg">Vetted Skills</h2>
-      </div>
-      <p className="ml-[14px] mr-[18px] mb-[10px]">
-        This developer passed 3+ hours of rigorous for the following skills
-      </p>
-      <div className="flex items-start">
-        <img src="Helps.svg" className="ml-[15.83px] mr-[9.83px]" />
-        <p className="mr-[14px] text-grey">
-          What is a Vetted skill? Learn more about our skill assessment
-          methodology
-        </p>
-      </div>
-      <img
-        src="Approved.svg"
-        className="mt-[22px] ml-[14px] w-[129px] h-[34px] mb-[-14px]"
-      />
-      <div className="bg-whiteGrey border rounded-[20px] mr-[18px] ml-[14px] w-[288px]">
-        <div className="flex items-center ">
-          <img
-            src="React.svg"
-            className="ml-3 mt-[19px] mr-[6px] w-6 h-[21.37px]"
-          />
-          <h2 className="text-originalBlue mr-[163px] mt-[18px]">React</h2>
-          <button className="bg-white border rounded-full w-7 h-7 mt-[16px] grid place-content-center">
-            <ChevronUp {...styles} />
-          </button>
+      <div className="mt-[22px] md:flex md:flex-row md:mt-[28px] md:pr-6 ">
+        <div>
+          <div className="flex md:justify-start items-center md:w-[194px]">
+            <img src="Icons.svg" className="mr-[8px]" />
+            <h2 className="text-lg md:text-xl">Vetted Skills</h2>
+          </div>
         </div>
-        <div className="bg-white border rounded-[20px] w-[144px] ml-[12px] mt-[6px] flex justify-start items-center text-center">
-          <p className="ml-[10px]  mr-[6px]">4.8</p>
-          <div>
-            <Rating
-              initialValue={4.8}
-              size={18}
-              fillColor={"#373AF5"}
-              className="top-[-3px]"
+        <div className="pl-[3px] md:pl-7 w-full">
+          <div className="md:pl[27px]">
+            <p className="mb-[10px] md:text-base">
+              This developer passed 3+ hours of rigorous for the following
+              skills
+            </p>
+            <div className="flex items-start">
+              <img src="Helps.svg" className="mr-[9.83px]" />
+              <p className=" text-grey md:text-base">
+                What is a Vetted skill? Learn more about our skill assessment
+                methodology
+              </p>
+            </div>
+            <img
+              src="Approved.svg"
+              className="mt-[22px] w-[129px] h-[34px] mb-[-14px] md:mt-7"
             />
-          </div>
-        </div>
-        <p className="ml-[12px] mb-[6px] mt-4">Quiz</p>
-        <p className="ml-[12px] mb-[14px] text-grey text-xs">
-          Includes 15 questions on the following topics
-        </p>
-        <div className=" pl-[12px] grid grid-cols-[140px_160px] items-center">
-          <p className="subtitle">DOM</p>
-          <div className="flex flex-row items-center">
-            <p className="subtitle ml-[10px] mr-[6px]">4.5</p>
-            <div>
-              <Rating
-                initialValue={4.5}
-                size={18}
-                fillColor={"#373AF5"}
-                className="top-[-3px]"
-              />
+
+            <div className="bg-whiteGrey border rounded-[20px] w-full px-[12px] md:px-6 md:pb-[22px]">
+              <div className="flex flex-row">
+                <MainRaiting />
+                <button className="bg-white border rounded-full w-7 h-7 md:w-8 md:h-8 mt-[16px] md:mt-[22px] md:ml-[7px] grid place-content-center">
+                  <ChevronUp {...styles} />
+                </button>
+              </div>
+
+              <div className="flex flex-wrap mt-4 justify-between ">
+                <div className="flex flex-col">
+                  <p className=" mb-[6px] md:md:internaltitle">Quiz</p>
+                  {!isMobile && <QuizResult />}
+                </div>
+                <QuizData />
+              </div>
+              {isMobile && <QuizResult />}
+              <hr className=" mb-5 bg-lightGrey md:mt-5"></hr>
+
+              <div className="flex flex-wrap mt-4 justify-between ">
+                <div className="flex flex-col">
+                  <p className="mb-[6px] md:md:internaltitle">
+                    Coding Challenge
+                  </p>
+                  {!isMobile && <ButtonCode />}
+                </div>
+                <CodeData />
+              </div>
+              {isMobile && <ButtonCode />}
             </div>
-          </div>
-          <p className="subtitle mb-[6px]">HTML</p>
-          <div className="flex flex-row items-center">
-            <p className="subtitle ml-[10px] mr-[6px]">4.5</p>
-            <div>
-              <Rating
-                initialValue={4.5}
-                size={18}
-                fillColor={"#373AF5"}
-                className="top-[-3px]"
-              />
-            </div>
-          </div>
-          <p className="subtitle mb-[6px]">CSS</p>
-          <div className="flex flex-row items-center">
-            <p className="subtitle ml-[10px] mr-[6px]">4.5</p>
-            <div>
-              <Rating
-                initialValue={4.5}
-                size={18}
-                fillColor={"#373AF5"}
-                className="top-[-3px]"
-              />
-            </div>
-          </div>
-          <p className="subtitle mb-[6px]">JavaScript</p>
-          <div className="flex flex-row items-center">
-            <p className="subtitle ml-[10px] mr-[6px]">4.5</p>
-            <div>
-              <Rating
-                initialValue={4.5}
-                size={18}
-                fillColor={"#373AF5"}
-                className="top-[-3px]"
-              />
-            </div>
-          </div>
-          <p className="subtitle ">React Components</p>
-          <div className="flex flex-row items-center">
-            <p className="subtitle ml-[10px] mr-[6px]">4.5</p>
-            <div>
-              <Rating
-                initialValue={4.5}
-                size={18}
-                fillColor={"#373AF5"}
-                className="top-[-3px]"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-center ">
-          <div className=" h-10 w-[264px] mt-5 mb-[22px]  text-base border rounded-lg border-originalBlue text-originalBlue flex items-center justify-center  ">
-            <p className="text-base">See Quiz results</p>
-          </div>
-        </div>
-        <hr className="ml-[12px] bg-lightGrey w-[264px] "></hr>
-        <p className="ml-[12px] mb-[6px] mt-[22px]">Coding Challenge</p>
-        <p className="ml-[12px] mb-[14px] text-grey text-xs">
-          Includes 3 tasks on coding skills
-        </p>
-        <div className="ml-[12px]">
-          <p className="subtitle mb-[6px]">Sorting algorithm</p>
-          <p className="subtitle mb-[6px]">Strings and arrays</p>
-          <p className="subtitle ">Complexity</p>
-        </div>
-        <div className="flex justify-center ">
-          <div className="h-10 w-[264px] mt-5 mb-[22px]  text-base border rounded-lg border-originalBlue text-originalBlue flex items-center justify-center  ">
-            <p className="text-base">See Code</p>
           </div>
         </div>
       </div>
-      <hr className="mt-[22px] ml-[14px] bg-lightGrey w-[288px] "></hr>
+      <hr className="mt-[28px] md:mt-[32px] bg-lightGrey "></hr>
     </>
   );
 }

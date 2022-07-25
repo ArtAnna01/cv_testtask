@@ -1,65 +1,28 @@
 import React from "react";
-import { Book, Clock } from "react-feather";
-
-const styles = {
-  size: "20px",
-  strokeWidth: "1px",
-};
+import { Book } from "react-feather";
+import { styles } from "..";
+import ButtonCall from "../components/ButtonCall";
+import Graduation from "../components/Graduation";
 
 function Education() {
   return (
     <>
-      <div className=" ml-[14px] mt-[22px] mb-[22px] flex items-center">
-        <Book {...styles} />
-        <h2 className="ml-[8px] text-lg">Education</h2>
-      </div>
-      <div>
-        <div className="flex ">
-          <div>
-            <div className="w-[14px] h-[14px] ml-[14px] mr-[8px] mb-[2px] border rounded-full bg-lightGreen"></div>
-            <img src="LineSmall.svg" className=" ml-[21px] " />
-          </div>
-          <div>
-            <p>Computer science</p>
-            <div className=" mr-[18px] ">
-              <p className="text-grey ">Boston Academy</p>
-              <div className="flex items-center mt-2">
-                <Clock {...styles} />
-                <p className="subtitle ml-1 mr-1">2 years 2 month</p>
-                <p className="subtitle mr-1">|</p>
-                <p className="subtitle">June 2019 - October 2021 </p>
-              </div>
-            </div>
-            <hr className="mt-[22px]  bg-lightGrey w-[266px] "></hr>
-          </div>
-        </div>
-        <div className="flex ">
-          <div className="mt-[23px]">
-            <div className="w-[14px] h-[14px] ml-[14px] mr-[8px] mb-[2px] border rounded-full bg-lightGreen"></div>
-            <img src="LineSmall.svg" className=" ml-[21px] " />
-          </div>
-          <div className="mt-5">
-            <p>Computer science</p>
-            <div className=" mr-[18px] ">
-              <p className="text-grey ">Boston Academy</p>
-              <div className="flex items-center mt-2">
-                <Clock {...styles} />
-                <p className="subtitle ml-1 mr-1">2 years 2 month</p>
-                <p className="subtitle mr-1">|</p>
-                <p className="subtitle">June 2019 - October 2021 </p>
-              </div>
+      <div className="pr-[18px] md:pr-6">
+        <div className="mt-[22px] md:flex md:flex-row md:mt-[28px]  pb-11 md:pb-10 ">
+          <div className="">
+            <div className="flex md:justify-start items-center md:w-[194px]">
+              <Book {...styles} className="mr-2 md:mr-[12px]" />
+              <h2 className="text-lg md:text-xl">Education</h2>
             </div>
           </div>
+          <div className="md:pl-7">
+            <Graduation />
+            <hr className="ml-9 md:ml-12 mb-5 bg-lightGrey "></hr>
+            <Graduation />
+          </div>
+          <hr className=" md:mt-[32px] bg-lightGrey "></hr>
         </div>
-        <hr className="mt-[24px] mb-[44px] ml-[14px] bg-lightGrey w-[288px] "></hr>
-        <div className="bg-whiteGrey border rounded-[20px] w-[288px] mb-5 ml-[14px] flex flex-col justify-center py-5 px-4 text-center">
-          <h2 className="mb-[26px]">
-            Would you like to schedule an interview with Ivan Ivanov?
-          </h2>
-          <button className="h-10 text-base border rounded-lg bg-originalBlue  border-originalBlue text-white">
-            Book a call
-          </button>
-        </div>
+        <ButtonCall />
       </div>
     </>
   );

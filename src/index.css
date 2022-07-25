@@ -25,6 +25,22 @@
     line-height: 20px;
   }
 
+  .internaltitle {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .reacttitle {
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
   .subtitle {
     font-family: "Roboto";
     font-style: normal;

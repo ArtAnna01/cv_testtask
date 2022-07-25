@@ -5,17 +5,21 @@ import { styles } from "..";
 function MainData() {
   return (
     <>
-      <div className="grid grid-cols-[20px_minmax(100px,260px)] gap-2 ml-[14px] md:ml-0">
+      <div className="grid grid-cols-[20px_minmax(100px,260px)] md:grid-cols-[20px_minmax(100px,460px)]  gap-2 ">
         <Briefcase {...styles} />
-        <p>6 years - total work experience</p>
+        <p className="text-sm md:text-base">6 years - total work experience</p>
         <Clock {...styles} />
-        <p>Overlap with your time zone: XX am - XX pm</p>
+        <p className="text-sm md:text-base">
+          Overlap with your time zone: XX am - XX pm
+        </p>
         <CheckCircle {...styles} />
-        <p>Availability: Ready to start now </p>
+        <p className="text-sm md:text-base">
+          Availability: Ready to start now{" "}
+        </p>
         <FileText {...styles} />
-        <p>Full time - 40 hours per week</p>
+        <p className="text-sm md:text-base">Full time - 40 hours per week</p>
       </div>
-      <div className="mr-[18px] md:mr-0 ml-3.5 md:ml-0 mb-7 mt-4">
+      <div className="mr-[18px] md:mr-0 mb-7 mt-4">
         <p>
           Imperdiet tellus neque nunc, etiam vitae risus quis semper. Tempus
           egestas mauris fringilla iaculis feugiat tincidunt auctor tellus.

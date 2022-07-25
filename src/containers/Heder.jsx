@@ -9,7 +9,7 @@ function Heder() {
   const { isTablet, isDesktop, isMobile } = useBP();
   return (
     <>
-      <div className="flex flex-col md:flex-row pt-[18px] md:pt-7 md:pr-6 w-full">
+      <div className="flex flex-col md:flex-row pt-[18px] md:pt-7  pr-[18px] md:pr-6 w-full">
         {!isMobile && <Avatar />}
         <div className="flex flex-row w-full md:justify-between mb-4 md:mb-0">
           {isMobile && <Avatar />}
@@ -24,7 +24,7 @@ function Heder() {
         {isMobile && <MainData />}
       </div>
       {isMobile && <ButtonGroup />}
-      <hr className="mt-[28px] md:mt-[32px] bg-lightGrey ml-[14px] mr-[18px] md:mx-6"></hr>
+      <hr className="mt-[28px] md:mt-[32px] bg-lightGrey "></hr>
     </>
   );
 }
