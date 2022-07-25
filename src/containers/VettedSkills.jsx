@@ -9,14 +9,14 @@ import ButtonCode from "../components/ButtonCode";
 import CodeData from "../components/CodeData";
 
 function VettedSkills() {
-  const { isTablet, isDesktop, isMobile } = useBP();
+  const { isMobile } = useBP();
 
   return (
     <>
       <div className="mt-[22px] md:flex md:flex-row md:mt-[28px] md:pr-6 ">
         <div>
           <div className="flex md:justify-start items-center md:w-[194px]">
-            <img src="Icons.svg" className="mr-[8px]" />
+            <img alt="img" src="Icons.svg" className="mr-[8px]" />
             <h2 className="text-lg md:text-xl">Vetted Skills</h2>
           </div>
         </div>
@@ -27,13 +27,14 @@ function VettedSkills() {
               skills
             </p>
             <div className="flex items-start">
-              <img src="Helps.svg" className="mr-[9.83px]" />
+              <img alt="img" src="Helps.svg" className="mr-[9.83px]" />
               <p className=" text-grey md:text-base">
                 What is a Vetted skill? Learn more about our skill assessment
                 methodology
               </p>
             </div>
             <img
+              alt="img"
               src="Approved.svg"
               className="mt-[22px] w-[129px] h-[34px] mb-[-14px] md:mt-7"
             />

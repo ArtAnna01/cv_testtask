@@ -6,7 +6,11 @@ function MainRaiting() {
     <>
       <div className="flex flex-col md:flex-row md:justify-between w-full">
         <div className="flex items-center ">
-          <img src="React.svg" className="mt-[19px] mr-[6px] w-6 h-[21.37px]" />
+          <img
+            alt="img"
+            src="React.svg"
+            className="mt-[19px] mr-[6px] w-6 h-[21.37px]"
+          />
           <h2 className="text-originalBlue mr-[163px] mt-[18px] md:reacttitle">
             React
           </h2>

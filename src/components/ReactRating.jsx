@@ -12,19 +12,21 @@ function ReactRating() {
           This developer passed 3+ hours of rigorous for the following skills
         </p>
         <div className="flex items-start">
-          <img src="Helps.svg" className="ml-[15.83px] mr-[9.83px]" />
+          <img alt="img" src="Helps.svg" className="ml-[15.83px] mr-[9.83px]" />
           <p className=" text-grey">
             What is a Vetted skill? Learn more about our skill assessment
             methodology
           </p>
         </div>
         <img
+          alt="img"
           src="Approved.svg"
           className="mt-[22px] w-[129px] h-[34px] mb-[-14px] md:mt-7"
         />
         <div className="bg-whiteGrey border rounded-[20px] w-full">
           <div className="flex items-center ">
             <img
+              alt="img"
               src="React.svg"
               className="ml-3 mt-[19px] mr-[6px] w-6 h-[21.37px]"
             />

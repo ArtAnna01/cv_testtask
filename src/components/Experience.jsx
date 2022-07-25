@@ -8,7 +8,7 @@ function Experience() {
       <div className="flex items-start">
         <div className="pb-[21px] md:pb-[28px]">
           <div className="w-[14px] h-[14px] mr-[8px] mt-[3px] md:mt-[5px] md:mr-5 mb-[2px] border rounded-full bg-originalBlue"></div>
-          <img src="Line.svg" className=" ml-[7px] h-full" />
+          <img alt="img" src="Line.svg" className=" ml-[7px] h-full" />
         </div>
         <div>
           <p className="md:internaltitle">Senior Frontend Developer</p>
@@ -30,16 +30,24 @@ function Experience() {
             </div>
             <p className="mt-4 mb-2">Languages</p>
             <div className="flex">
-              <img src="JS.svg" className=" mr-[6px] w-[22px]" />
+              <img alt="img" src="JS.svg" className=" mr-[6px] w-[22px]" />
               <p>Java Script</p>
-              <img src="Spring.svg" className=" mr-[6px] w-[22px] ml-[14px]" />
+              <img
+                alt="img"
+                src="Spring.svg"
+                className=" mr-[6px] w-[22px] ml-[14px]"
+              />
               <p>Java Sping</p>
             </div>
             <p className="mt-4 mb-2 md:mb-5">Technologies</p>
             <div className="flex mb-5">
-              <img src="React.svg" className=" mr-[6px] w-[22px]" />
+              <img alt="img" src="React.svg" className=" mr-[6px] w-[22px]" />
               <p>React</p>
-              <img src="Node.svg" className=" mr-[6px] w-[22px] ml-[14px]" />
+              <img
+                alt="img"
+                src="Node.svg"
+                className=" mr-[6px] w-[22px] ml-[14px]"
+              />
               <p>Node.js</p>
             </div>
           </div>
